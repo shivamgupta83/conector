@@ -19,6 +19,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    amount: {
+      type: Number,
+      trim: true,
+      default: 1000,
+    },
   },
   { timestamps: true }
 );

@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const messages = require('./message');
+const messages = require('./error.message');
 
 exports.createHash = (text) => {
   return crypto.createHash('md5').update(text).digest('hex');

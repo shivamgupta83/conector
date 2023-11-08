@@ -7,7 +7,7 @@ const route = require('./src/routes/routes');
 
 mongoose.set('strictQuery', true);
 mongoose
-  .connect('mongodb+srv://123:1234@cluster0.pf4v08v.mongodb.net/common')
+  .connect(process.env.MONGO_DB)
   .then(() => console.log('MongoDB is connected'))
   .catch((err) => console.log(err));
 

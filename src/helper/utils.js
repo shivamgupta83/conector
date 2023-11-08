@@ -5,16 +5,15 @@ exports.createHash = (text) => {
   return crypto.createHash('md5').update(text).digest('hex');
 };
 
-function AddedByOrEditedBy(req, method) {
+exports.AddedByOrEditedBy = (req, method) => {
   if (method == 'add') {
     return { date: moment.utc(), userId: req.user ? req.user._id : null };
   } else {
     return { date: moment.utc(), userId: req.user ? req.user._id : null };
   }
-}
+};
 
-
-const message_Response = (res, statusCode, type, item, success, data) => {
+exports.message_Response = (res, statusCode, type, item, success, data) => {
   let message = {
     message: messages[type].replace(':item', item),
     success: success,

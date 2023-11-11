@@ -1,4 +1,4 @@
-//for get current timess
+//for get current times
 exports.getCurrentTime = () => {
   const currentDate = new Date();
   const year = currentDate.getFullYear();

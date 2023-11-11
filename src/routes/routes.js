@@ -4,30 +4,25 @@ const { authenticate } = require('../auth/auth.controller');
 const { createUser } = require('../controller/user.controller');
 const {
   changeBalance,
-  transaction,
   getBalance,
   status,
 } = require('../controller/transaction.controller');
 
-//1
 //_______________________________________________________ AUTH ____________________________________________________
 
-router.post('/auth', authenticate);
-
+router.post('/Authenticate', authenticate);
 
 //_________________________________________________________ CHANGE BALANCE __________________________________________
 
-router.post('/changeBalance', changeBalance);
-
-// --> create transaction
+router.post('/BetWin', changeBalance);
 
 //_________________________________________________________ STATUS __________________________________________
 
-router.get('/status',status);
+router.get('/Status', status);
 
 //_________________________________________________________ GET BALANCE __________________________________________
 
-router.get('/getBalance', getBalance);
+router.get('/GetBAlance', getBalance);
 
 //_________________________________________________________ CREATE USER __________________________________________
 

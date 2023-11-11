@@ -17,7 +17,7 @@ router.post('/auth', authenticate);
 
 //_________________________________________________________ CHANGE BALANCE __________________________________________
 
-router.get('/changeBalance', changeBalance);
+router.post('/changeBalance', changeBalance);
 
 // --> create transaction
 

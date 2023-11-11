@@ -1,4 +1,4 @@
-//for get current time
+//for get current timess
 exports.getCurrentTime = () => {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
@@ -15,8 +15,8 @@ exports.commonError = (error) => {
   console.log('error.message', error.message);
   console.log('error.cause', error.cause);
   console.log('error.stack', error.stack);
-  console.log('error.fileName', error.fileName);
   console.log('error.lineNumber', error.lineNumber);
+  console.log('error.fileName', error.fileName);
 };
 
 //common function for which is require for body and query

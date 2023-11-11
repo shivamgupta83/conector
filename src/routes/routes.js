@@ -6,23 +6,24 @@ const {
   changeBalance,
   transaction,
   getBalance,
+  status,
 } = require('../controller/transaction.controller');
 
+//1
 //_______________________________________________________ AUTH ____________________________________________________
 
-router.get('/auth', authenticate);
+router.post('/auth', authenticate);
+
 
 //_________________________________________________________ CHANGE BALANCE __________________________________________
 
 router.get('/changeBalance', changeBalance);
 
-//_________________________________________________________ TRANSACTION __________________________________________
-
-router.get('/transaction', transaction);
+// --> create transaction
 
 //_________________________________________________________ STATUS __________________________________________
 
-router.get('/status');
+router.get('/status',status);
 
 //_________________________________________________________ GET BALANCE __________________________________________
 

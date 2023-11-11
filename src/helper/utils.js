@@ -13,14 +13,12 @@ exports.AddedByOrEditedBy = (req, method) => {
   }
 };
 
-exports.message_Response = (res, statusCode, type, item, success, data) => {
+exports.message_Response = (res, statusCode, item, type, success, data) => {
   let message = {
     message: messages[type].replace(':item', item),
     success: success,
   };
-  if (item == 'Login successfully' && data) {
-    message.token = data;
-  } else if (data) {
+if (data) {
     message.data = data;
   }
   return res.status(statusCode).send(message);

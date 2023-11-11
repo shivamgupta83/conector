@@ -2,6 +2,7 @@
 module.exports = {
   NOAUTHENTICATION: 'Forbidden',
   TOKEN_REQ: 'Token is required',
+  Required: ':item is required',
   UpdateSuccess: ':item updated successfully.',
   DeleteSuccess: ':item deleted successfully.',
   SERVER_ERROR: 'Something went wrong. Please try again later.',
@@ -20,7 +21,6 @@ module.exports = {
   RESULT_FOUND: 'All :item are fetched',
   NOT_EXIST: ':item not exist / deleted',
   SINGLE_RESULT_FOUND: ':item are fetched',
-  Required: ':item is required',
   InvalidRole: 'Please enter a valid :item Role',
   InvalidEmail: 'Please enter valid email address',
   InvalidEmails: 'Please enter valid :item address',

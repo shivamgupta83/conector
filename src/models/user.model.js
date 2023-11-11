@@ -2,7 +2,17 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
   {
-    name: {
+    userName: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    lastname: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    firstName: {
       type: String,
       required: true,
       trim: true,
@@ -15,11 +25,15 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    currency: {
+      type: String,
+      trim: true,
+    },
     phone: {
       type: String,
       trim: true,
     },
-    amount: {
+    balance: {
       type: Number,
       trim: true,
       default: 1000,
